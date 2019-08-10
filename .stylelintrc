@@ -1,0 +1,439 @@
+{
+    "syntax": "scss",
+    "plugins": ["stylelint-order"],
+    "rules": {
+        "order/properties-order": [
+            {
+                "properties": [
+                    "content",
+                    "box-sizing",
+                    "display",
+                    "flex",
+                    "flex-wrap",
+                    "flex-basis",
+                    "flex-direction",
+                    "flex-flow",
+                    "flex-grow",
+                    "flex-shrink",
+                    "align-content",
+                    "align-items",
+                    "align-self",
+                    "justify-content",
+                    "order",
+                    "grid",
+                    "grid-area",
+                    "grid-auto-*",
+                    "grid-column",
+                    "grid-column-*",
+                    "grid-gap",
+                    "grid-row",
+                    "grid-row-*",
+                    "grid-template",
+                    "grid-template-*",
+                    "position",
+                    "z-index",
+                    "top",
+                    "right",
+                    "bottom",
+                    "left",
+                    "width",
+                    "min-width",
+                    "max-width",
+                    "height",
+                    "min-height",
+                    "max-height",
+                    "overflow",
+                    "overflow-*",
+                    "margin",
+                    "margin-*",
+                    "border",
+                    "border-*",
+                    "padding",
+                    "padding-*",
+                ]
+            },
+            {
+                "emptyLineBefore": "always",
+                "properties": [
+                    "transform",
+                    "transform-*",
+                    "backface-visibility",
+                    "perspective",
+                    "perspective-origin",
+                    "transition",
+                    "transition-*",
+                    "animation",
+                    "animation-*",
+                ]
+            }
+        ],
+        "color-hex-case": ["lower", {
+            "severity": "warning",
+            "message": "HEX color lower case letters should be"
+        }],
+        "color-named": ["never", {
+            "message": "Colors keywords or names can not write"
+        }],
+        "color-no-invalid-hex": [true, {
+            "message": "HEX colors must be correctly written"
+        }],
+        "font-family-name-quotes": ["always-where-recommended", {
+            "message": "Specify whether or not quotation marks should be used around font family names."
+        }],
+        "font-family-no-duplicate-names": [true, {
+            "message": "Disallow duplicate font family names."
+        }],
+        "font-weight-notation": ["numeric", {
+            "message": "Require numeric or named (where possible) font-weight values. Also, when named values are expected, require only valid names.",
+            "ignore": ["relative"]
+        }],
+        "function-calc-no-unspaced-operator": [true, {
+            "message": "Disallow an unspaced operator within calc functions."
+        }],
+        "function-linear-gradient-no-nonstandard-direction": [true, {
+            "message": "Disallow direction values in linear-gradient() calls that are not valid according to the standard syntax."
+        }],
+        "function-comma-space-after": ["always", {
+            "message": "Require a single space or disallow whitespace after the commas of functions (Autofixable)."
+        }],
+        "function-comma-space-before": ["never", {
+            "message": "Require a single space or disallow whitespace before the commas of functions (Autofixable)."
+        }],
+        "function-comma-newline-before": ["never-multi-line", {
+            "message": "Require a newline or disallow whitespace before the commas of functions (Autofixable)."
+        }],
+        "function-comma-newline-after": ["never-multi-line", {
+            "message": "Require a newline or disallow whitespace after the commas of functions (Autofixable)."
+        }],
+        "function-parentheses-newline-inside": ["never-multi-line", {
+            "message": "Require a newline or disallow whitespace on the inside of the parentheses of functions (Autofixable)."
+        }],
+        "function-max-empty-lines": [0, {
+            "message": "Limit the number of adjacent empty lines within functions (Autofixable)."
+        }],
+        "function-name-case": ["lower", {
+            "message": "Specify lowercase or uppercase for function names (Autofixable)."
+        }],
+        "function-whitespace-after": ["always", {
+            "message": "Require or disallow whitespace after functions (Autofixable)."
+        }],
+        "function-url-scheme-whitelist": [["data", "/^https/"], {
+            "message": "Specify a whitelist of allowed URL schemes."
+        }],
+        "number-leading-zero": ["always", {
+            "message": "Require or disallow a leading zero for fractional numbers less than 1 (Autofixable)."
+        }],
+        "number-max-precision": [6, {
+            "message": "Limit the number of decimal places allowed in numbers."
+        }],
+        "number-no-trailing-zeros": [true, {
+            "message": "Disallow trailing zeros in numbers (Autofixable)."
+        }],
+        "string-no-newline": [true, {
+            "message": "Disallow (unescaped) newlines in strings."
+        }],
+        "string-quotes": ["single", {
+            "message": "Specify single or double quotes around strings (Autofixable)."
+        }],
+        "length-zero-no-unit": [true, {
+            "message": "Disallow units for zero lengths (Autofixable)."
+        }],
+        "time-min-milliseconds": [100, {
+            "message": "Specify the minimum number of milliseconds for time values."
+        }],
+        "unit-case": ["lower", {
+            "message": "Specify lowercase or uppercase for units (Autofixable)."
+        }],
+        "value-keyword-case": ["lower", {
+            "message": "Specify lowercase or uppercase for keywords values (Autofixable).",
+            "ignoreProperties": ["/font-/", ]
+        }],
+        "unit-no-unknown": [true, {
+            "message": "Disallow unknown units."
+        }],
+        "value-no-vendor-prefix": [true, {
+            "message": "Disallow vendor prefixes for values."
+        }],
+        "property-no-vendor-prefix": [true, {
+            "message": "Disallow vendor prefixes for properties."
+        }],
+        "value-list-comma-newline-after": ["always-multi-line", {
+            "message": "Require a newline or disallow whitespace after the commas of value lists (Autofixable)."
+        }],
+        "value-list-comma-newline-before": ["never-multi-line", {
+            "message": "Require a newline or disallow whitespace before the commas of value lists."
+        }],
+        "value-list-comma-space-after": ["always-single-line", {
+            "message": "Require a single space or disallow whitespace after the commas of value lists (Autofixable)."
+        }],
+        "value-list-comma-space-before": ["never", {
+            "message": "Require a single space or disallow whitespace before the commas of value lists (Autofixable)."
+        }],
+        "property-blacklist": [["text-rendering", ], {
+            "message": "Specify a blacklist of disallowed properties."
+        }],
+        "property-case": ["lower", {
+            "message": "Specify lowercase or uppercase for properties (Autofixable)."
+        }],
+        "property-no-unknown": [true, {
+            "message": "Disallow unknown properties."
+        }],
+        "declaration-bang-space-after": ["never", {
+            "message": "Require a single space or disallow whitespace after the bang of declarations (Autofixable)."
+        }],
+        "declaration-bang-space-before": ["always", {
+            "message": "Require a single space or disallow whitespace before the bang of declarations (Autofixable)."
+        }],
+        "declaration-colon-newline-after": ["always-multi-line", {
+            "message": "Require a newline or disallow whitespace after the colon of declarations (Autofixable)."
+        }],
+        "declaration-colon-space-after": ["always-single-line", {
+            "message": "Require a single space or disallow whitespace after the colon of declarations (Autofixable)."
+        }],
+        "declaration-colon-space-before": ["never", {
+            "message": "Require a single space or disallow whitespace before the colon of declarations (Autofixable)."
+        }],
+        "declaration-property-unit-blacklist": [{
+            "font-size": ["pt"],
+            "/^animation/": ["ms"],
+            "/^padding/": ["%"]
+            }, {
+            "message": "Specify a blacklist of disallowed property and unit pairs within declarations."
+        }],
+        "unit-blacklist": [["mm","cm","in","pc",], {
+            "message": "Specify a blacklist of disallowed units."
+        }],
+        "declaration-block-no-duplicate-properties": [true, {
+            "message": "Disallow duplicate properties within declaration blocks."
+        }],
+        "declaration-block-no-shorthand-property-overrides": [true, {
+            "message": "Disallow shorthand properties that override related longhand properties."
+        }],
+        "declaration-block-semicolon-newline-after": ["always", {
+            "message": "Require a newline or disallow whitespace after the semicolons of declaration blocks (Autofixable)."
+        }],
+        "declaration-block-single-line-max-declarations": [1, {
+            "message": "Limit the number of declarations within a single-line declaration block."
+        }],
+        "declaration-block-trailing-semicolon": ["always", {
+            "message": "Require or disallow a trailing semicolon within declaration blocks (Autofixable)."
+        }],
+        "block-closing-brace-empty-line-before": ["never", {
+            "message": "Require or disallow an empty line before the closing brace of blocks (Autofixable)."
+        }],
+        "block-closing-brace-newline-after": ["always", {
+            "message": "Require a newline or disallow whitespace after the closing brace of blocks (Autofixable)."
+        }],
+        "block-closing-brace-newline-before": ["always", {
+            "message": "Require a newline or disallow whitespace before the closing brace of blocks (Autofixable)."
+        }],
+        "block-opening-brace-newline-after": ["always", {
+            "message": "Require a newline after the opening brace of blocks (Autofixable)."
+        }],
+        "block-opening-brace-space-before": ["always", {
+            "message": "Require a single space or disallow whitespace before the opening brace of blocks (Autofixable)."
+        }],
+        "selector-attribute-brackets-space-inside": ["never", {
+            "message": "Require a single space or disallow whitespace on the inside of the brackets within attribute selectors (Autofixable)."
+        }],
+        "selector-attribute-operator-space-after": ["never", {
+            "message": "Require a single space or disallow whitespace after operators within attribute selectors (Autofixable)."
+        }],
+        "selector-attribute-operator-space-before": ["never", {
+            "message": "Require a single space or disallow whitespace before operators within attribute selectors (Autofixable)."
+        }],
+        "selector-combinator-space-after": ["always", {
+            "message": "Require a single space or disallow whitespace after the combinators of selectors (Autofixable)."
+        }],
+        "selector-combinator-space-before": ["always", {
+            "message": "Require a single space or disallow whitespace before the combinators of selectors (Autofixable)."
+        }],
+        "selector-attribute-operator-blacklist": [["id"], {
+            "message": "Specify a blacklist of disallowed attribute operators."
+        }],
+        "selector-max-compound-selectors": [3, {
+            "severity": "warning",
+            "message": "Limit the number of compound selectors in a selector."
+        }],
+        "selector-pseudo-class-case": ["lower", {
+            "message": "Specify lowercase or uppercase for pseudo-class selectors (Autofixable)."
+        }],
+        "selector-pseudo-class-no-unknown": [true, {
+            "message": "Disallow unknown pseudo-class selectors."
+        }],
+        "selector-pseudo-class-parentheses-space-inside": ["never", {
+            "message": "Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors (Autofixable)."
+        }],
+        "selector-pseudo-element-case": ["lower", {
+            "message": "Specify lowercase or uppercase for pseudo-element selectors."
+        }],
+        "selector-pseudo-element-no-unknown": [true, {
+            "message": "Disallow unknown pseudo-element selectors."
+        }],
+        "selector-type-case": ["lower", {
+            "message": "Specify lowercase or uppercase for type selectors (Autofixable)."
+        }],
+        "selector-type-no-unknown": [true, {
+            "message": "Disallow unknown type selectors."
+        }],
+        "selector-max-empty-lines": [0, {
+            "message": "Limit the number of adjacent empty lines within selectors (Autofixable)."
+        }],
+        "selector-list-comma-newline-after": ["always", {
+            "message": "Require a newline or disallow whitespace after the commas of selector lists (Autofixable)."
+        }],
+        "selector-list-comma-newline-before": ["never-multi-line", {
+            "message": "Require a newline or disallow whitespace before the commas of selector lists (Autofixable)."
+        }],
+        "selector-list-comma-space-after": ["always-single-line", {
+            "message": "Require a single space or disallow whitespace after the commas of selector lists (Autofixable)."
+        }],
+        "selector-list-comma-space-before": ["never", {
+            "message": "Require a single space or disallow whitespace before the commas of selector lists (Autofixable)."
+        }],
+        "rule-empty-line-before": ["always", {
+            "message": "Require or disallow an empty line before rules (Autofixable).",
+            "ignore": ["after-comment"]
+        }],
+        "media-feature-colon-space-after": ["always", {
+            "message": "Require a single space or disallow whitespace after the colon in media features (Autofixable)."
+        }],
+        "media-feature-colon-space-before": ["never", {
+            "message": "Require a single space or disallow whitespace before the colon in media features (Autofixable)."
+        }],
+        "media-feature-name-case": ["lower", {
+            "message": "Specify lowercase or uppercase for media feature names (Autofixable)."
+        }],
+        "media-feature-name-no-vendor-prefix": [true, {
+            "severity": "warning",
+            "message": "Disallow vendor prefixes for media feature names."
+        }],
+        "media-feature-parentheses-space-inside": ["never", {
+            "message": "Require a single space or disallow whitespace on the inside of the parentheses within media features (Autofixable)."
+        }],
+        "media-feature-range-operator-space-after": ["always", {
+            "message": "Require a single space or disallow whitespace after the range operator in media features (Autofixable)."
+        }],
+        "media-feature-range-operator-space-before": ["always", {
+            "message": "Require a single space or disallow whitespace before the range operator in media features (Autofixable)."
+        }],
+        "at-rule-blacklist": [["extend", ], {
+            "message": "В чёрном списке @-правило это"
+        }],
+        "at-rule-empty-line-before": ["always", {
+            "message": "Require or disallow an empty line before at-rules (Autofixable).",
+            "ignoreAtRules": ["import", "include", "function", "return", "if", "else"],
+            "ignore": ["after-comment"]
+        }],
+        "at-rule-name-case": ["lower", {
+            "message": "Specify lowercase or uppercase for at-rules names (Autofixable)."
+        }],
+        "at-rule-name-space-after": ["always", {
+            "message": "Require a single space after at-rule names (Autofixable)."
+        }],
+        "at-rule-no-unknown": [true, {
+            "message": "Disallow unknown at-rules.",
+            "ignoreAtRules": [
+            "/^at-/",
+            "/^mixin/",
+            "/^include/",
+            "/^if/",
+            "/^else/",
+            "/^function/",
+            "/^return/",
+            "/^each/",
+            "/^while/",
+            ]
+        }],
+        "at-rule-no-vendor-prefix": [true, {
+            "message": "Disallow vendor prefixes for at-rules."
+        }],
+        "at-rule-semicolon-newline-after": ["always", {
+            "message": "Require or disallow an empty line before at-rules (Autofixable)."
+        }],
+        "at-rule-semicolon-space-before": ["never", {
+            "message": "Require a single space or disallow whitespace before the semicolons of at-rules."
+        }],
+        "comment-empty-line-before": ["always", {
+            "message": "Require or disallow an empty line before comments (Autofixable).",
+            "except": ["first-nested"],
+            "ignore": ["stylelint-commands"]
+        }],
+        "comment-no-empty": [true, {
+            "message": "Disallow empty comments."
+        }],
+        "comment-whitespace-inside": ["always", {
+            "message": "Require or disallow whitespace on the inside of comment markers (Autofixable)."
+        }],
+        "indentation": [2, {
+            "message": "Specify indentation (Autofixable)."
+        }],
+        "max-empty-lines": [3, {
+            "message": "Limit the number of adjacent empty lines within functions (Autofixable)."
+        }],
+        "max-nesting-depth": [3, {
+            "message": "Limit the depth of nesting.",
+            "severity": "warning",
+            "ignore": ["blockless-at-rules"]
+        }],
+        "no-duplicate-selectors": [true, {
+            "message": "Disallow duplicate selectors within a stylesheet."
+        }],
+        "no-eol-whitespace": [true, {
+            "message": "Disallow end-of-line whitespace (Autofixable)"
+        }],
+        "no-extra-semicolons": [true, {
+            "message": "Disallow extra semicolons (Autofixable)."
+        }],
+        "no-missing-end-of-source-newline": [true, {
+            "message": "Disallow missing end-of-source newlines (Autofixable)."
+        }],
+        "media-feature-name-no-unknown": [true, {
+            "message": "There are no such media conditions on the light side."
+        }],
+        "keyframe-declaration-no-important": [true, {
+            "message": "!important in keyframe is ignored by some browsers"
+        }],
+        "no-duplicate-at-import-rules": [true, {
+            "message": "Re-import the file"
+        }],
+        "no-empty-source": [true, {
+            "message": "Empty files"
+        }],
+        "shorthand-property-no-redundant-values": [true, {
+            "message": "In the property value, redundancy is superfluous; in short, you can write"
+        }],
+        "selector-max-attribute": [1, {
+            "severity": "warning",
+            "message": "Attributes in the selector more than one should not be used"
+        }],
+        "selector-max-type": [2, {
+            "severity": "warning",
+            "message": "Selectors on the tag more than two should not be used"
+        }],
+        "selector-max-combinators": [2, {
+            "severity": "warning",
+            "message": "Combinators in the selector more than two should not be used"
+        }],
+        "selector-pseudo-class-blacklist": [["/^nth-/", ], {
+            "severity": "warning",
+            "message": "Pseudo-class is not worth using"
+        }],
+        "value-list-max-empty-lines": [0, {
+            "message": "Пустые строки в значениях свойств недопустимы"
+        }],
+        "declaration-block-semicolon-newline-before": ["never-multi-line", {
+            "message": "Carriage in front of the symbol, not allowed"
+        }],
+        "declaration-block-semicolon-space-before": ["never", {
+            "message": "Space before the character, not allowed"
+        }],
+        "selector-descendant-combinator-no-non-space": [true, {
+            "message": "Combined selectors should be separated by a single space."
+        }],
+        "linebreaks": ["unix", {
+            "severity": "warning",
+            "message": "Line endings must be LF."
+        }]
+    }
+}
