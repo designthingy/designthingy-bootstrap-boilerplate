@@ -47,9 +47,6 @@
         "popper.js": "^1.15.0",
         "svg4everybody": "^2.1.9"
     },
-    "peerDependencies": {
-        "popper.js": "^1.15.0"
-    },
     "devDependencies": {
         "@babel/preset-env": "^7.5.5",
         "autoprefixer": "^9.6.1",
@@ -67,6 +64,10 @@
         "grunt-stylelint": "^0.11.1",
         "grunt-svgmin": "^6.0.0",
         "grunt-svgstore": "^2.0.0",
+        "imagemin": "^7.0.0",
+        "imagemin-gifsicle": "^6.0.1",
+        "imagemin-jpegtran": "^6.0.0",
+        "imagemin-optipng": "^7.0.0",
         "node-sass": "^4.12.0",
         "stylelint": "^10.1.0",
         "stylelint-order": "^3.0.1"

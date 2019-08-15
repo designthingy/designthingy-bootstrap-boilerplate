@@ -75,6 +75,16 @@ module.exports = function (grunt) {
                     dest: './build'
                 }]
             },
+            build_image: {
+                files: [{
+                    expand: true,
+                    cwd: './src',
+                    src: [
+                        '**/*.{png,jpg,gif}'
+                    ],
+                    dest: './build/assets'
+                }]
+            },
             build_scss: {
                 files: [{
                     expand: true,
@@ -206,6 +216,16 @@ module.exports = function (grunt) {
                 './build'
             ]
         },
+        imagemin: { // Minify Images.
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: './build/assets/images',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: './build/assets/images'
+                }]
+            }
+        },
         svgmin: { // Minify SVG.
             dist: {
                 files: [{
@@ -299,6 +319,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-stylelint');
     grunt.loadNpmTasks('grunt-svgstore');
     grunt.loadNpmTasks('grunt-svgmin');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     // Register Tasks.
     grunt.registerTask('vendor', ['copy:jquery', 'copy:easing', 'copy:popper', 'copy:bootstrap', 'copy:svg4everybody']);
@@ -307,7 +328,7 @@ module.exports = function (grunt) {
     grunt.registerTask('svg', ['svgmin', 'svgstore']);
     grunt.registerTask('test', ['eslint', 'stylelint']);
     grunt.registerTask('prev', ['browserSync', 'watch']);
-    grunt.registerTask('dev', ['clean:rm_build', 'copy:build_html', 'copy:build_scss', 'copy:build_js', 'vendor', 'sass', 'postcss', 'babel', 'uglify']);
+    grunt.registerTask('dev', ['clean:rm_build', 'copy:build_html', 'copy:build_image', 'copy:build_scss', 'copy:build_js', 'vendor', 'sass', 'postcss', 'babel', 'uglify', 'imagemin']);
     grunt.registerTask('build', ['dev', 'clean:build']);
     grunt.registerTask('default', ['dev', 'prev']);
 };
