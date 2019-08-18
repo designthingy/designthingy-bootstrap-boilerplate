@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>DesignThingy Bootstrap Boilerplate</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,27 +30,737 @@
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.css">
+    <!-- jQuery Timepicker CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/jquery/dist/jquery.timepicker.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/vendors/bootstrap/dist/css/bootstrap.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css">
 </head>
-<body class="text-body base-font-size">
+<body class="text-body">
     <div class="wrapper">
-        <!-- page html goes here -->
+        <div class="jumbotron text-center bg-secondary text-white">
+            <h1 class="display-4 mb-4">DesignThingy Bootstrap Boilerplate</h1>
+            <p class="lead">A painless front-end bootstrap boilerplate by DesignThingy for building fast, robust, and adaptable static websites.</p>
+        </div>
+        <div class="content">
+            <div class="container">
+                <!-- Color -->
+                <section class="section colors-section">
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <div class="section-title mb-5">
+                                <h2>Colors</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content row">
+                        <div class="col-10 mx-auto">
+                            <div class="row">
+                                <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                                    <div class="color card bg-white box-shadow text-center">
+                                        <div class="swatch bg-primary rounded-circle mx-auto"></div>
+                                        <span class="title">Primary</span>
+                                        <span class="hex-value text-muted mt-3">#007bff</span>
+                                    </div>
+                                </div>
+                                <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                                    <div class="color card bg-white box-shadow text-center">
+                                        <div class="swatch bg-secondary rounded-circle mx-auto"></div>
+                                        <span class="title">Secondary</span>
+                                        <span class="hex-value text-muted mt-3">#6c757d</span>
+                                    </div>
+                                </div>
+                                <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                                    <div class="color card bg-white box-shadow text-center">
+                                        <div class="swatch bg-success rounded-circle mx-auto"></div>
+                                        <span class="title">Success</span>
+                                        <span class="hex-value text-muted mt-3">#28a745</span>
+                                    </div>
+                                </div>
+                                <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                                    <div class="color card bg-white box-shadow text-center">
+                                        <div class="swatch bg-info rounded-circle mx-auto"></div>
+                                        <span class="title">Info</span>
+                                        <span class="hex-value text-muted mt-3">#17a2b8</span>
+                                    </div>
+                                </div>
+                                <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                                    <div class="color card bg-white box-shadow text-center">
+                                        <div class="swatch bg-warning rounded-circle mx-auto"></div>
+                                        <span class="title">Warning</span>
+                                        <span class="hex-value text-muted mt-3">#ffc107</span>
+                                    </div>
+                                </div>
+                                <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                                    <div class="color card bg-white box-shadow text-center">
+                                        <div class="swatch bg-danger rounded-circle mx-auto"></div>
+                                        <span class="title">Danger</span>
+                                        <span class="hex-value text-muted mt-3">#dc3545</span>
+                                    </div>
+                                </div>
+                                <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                                    <div class="color card bg-white box-shadow text-center">
+                                        <div class="swatch bg-light rounded-circle mx-auto"></div>
+                                        <span class="title">Light</span>
+                                        <span class="hex-value text-muted mt-3">#f8f9fa</span>
+                                    </div>
+                                </div>
+                                <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                                    <div class="color card bg-white box-shadow text-center">
+                                        <div class="swatch bg-dark rounded-circle mx-auto"></div>
+                                        <span class="title">Dark</span>
+                                        <span class="hex-value text-muted mt-3">#343a40</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/ End Color -->
+                <!-- Typography -->
+                <section class="section typography-section">
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <div class="section-title mb-5">
+                                <h2>Typography</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content row">
+                        <div class="col-10 mx-auto">
+                            <div class="row">
+                                <div class="col-12 mx-auto">
+                                    <table class="table table-striped box-shadow table-borderless">
+                                        <tdead class="text-uppercase">
+                                            <tr class="bg-transparent">
+                                                <th class="font-weight-normal">Type</th>
+                                                <th class="font-weight-normal">Example</th>
+                                                <th class="font-weight-normal">Font size</th>
+                                                <th class="font-weight-normal">Line height</th>
+                                            </tr>
+                                        </tdead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Heading 1</td>
+                                                <td><h1>ABCabc</h1></td>
+                                                <td>2.5rem</td>
+                                                <td>1.2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heading 2</td>
+                                                <td><h2>ABCabc</h2></td>
+                                                <td>2rem</td>
+                                                <td>1.2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heading 3</td>
+                                                <td><h3>ABCabc</h3></td>
+                                                <td>1.75rem</td>
+                                                <td>1.2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heading 4</td>
+                                                <td><h4>ABCabc</h4></td>
+                                                <td>1.5rem</td>
+                                                <td>1.2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heading 5</td>
+                                                <td><h5>ABCabc</h5></td>
+                                                <td>1.25rem</td>
+                                                <td>1.2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heading 6</td>
+                                                <td><h6>ABCabc</h6></td>
+                                                <td>1rem</td>
+                                                <td>1.2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Paragraph</td>
+                                                <td><p>ABCabc</p></td>
+                                                <td>1rem</td>
+                                                <td>1.5</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/ End Typography -->
+                <!-- Form -->
+                <section class="section form-controls">
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <div class="section-title mb-5">
+                                <h2>Form Controls</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content row">
+                        <div class="col-10 mx-auto">
+                            <!-- Simple Form -->
+                            <div class="simple-form">
+                                <h3>Simple Form</h3>
+                                <form>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="form1-name" class="col-form-label">Name</label>
+                                            <input type="text" class="form-control" id="form1-name" placeholder="Name">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="form1-email" class="col-form-label">Email</label>
+                                            <input type="email" class="form-control" id="form1-email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <label for="form1-password">Password</label>
+                                            <input type="password" class="form-control" id="form1-password" placeholder="Password" required="">
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <label for="form1-state">State</label>
+                                            <select class="custom-select" id="form1-state">
+                                                <option value="" selected="selected">Choose One</option>
+                                                <option value="1">California</option>
+                                                <option value="2">Virginia</option>
+                                                <option value="3">Texas</option>
+                                                <option value="4">Florida</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <label for="form1-zip">Zip</label>
+                                            <input type="text" class="form-control" id="form1-zip" placeholder="Zip" required="">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/ End Simple Form -->
+                            <!-- Form Icons -->
+                            <div class="custom-form">
+                                <h3 class="my-4">Using Icons</h3>
+                                <form>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <div class="input-group">
+                                                <span class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-user"></i>
+                                                    </span>
+                                                </span>
+                                                <input type="text" class="form-control" id="form1-username" placeholder="Username">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <div class="input-group">
+                                                <input type="password" class="form-control" id="form2-password" placeholder="Password">
+                                                <span class="input-group-append">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-lock"></i>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/ End Form Icons -->
+                            <!-- Custom Form -->
+                            <div class="custom-form">
+                                <h3 class="my-4">Custom controls</h3>
+                                <form>
+                                    <div class="row mx-0">
+                                        <div class="custom-controls-example col-md-4 col-sm-4 col-xs-12 pl-0">
+                                            <h6 class="text-muted mb-2">Checkboxes</h6>
+                                            <fieldset>
+                                                <div class="custom-control custom-checkbox d-block my-2">
+                                                    <input type="checkbox" class="custom-control-input custom-control-input-lg" id="customCheck1">
+                                                    <label class="custom-control-label" for="customCheck1">Pizza</label>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset>
+                                                <div class="custom-control custom-checkbox d-block my-2">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2" checked="checked">
+                                                    <label class="custom-control-label" for="customCheck2">Pasta</label>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset disabled="disabled">
+                                                <div class="custom-control custom-checkbox d-block my-2">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                    <label class="custom-control-label" for="customCheck3">Burgers</label>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset disabled="disabled">
+                                                <div class="custom-control custom-checkbox d-block my-2">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck4" checked="checked">
+                                                    <label class="custom-control-label" for="customCheck4">Tacos</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="custom-controls-example col-md-4 col-sm-4 col-xs-12">
+                                            <h6 class="text-muted mb-2">Radio Buttons</h6>
+                                            <fieldset>
+                                                <div class="custom-control custom-radio d-block my-2">
+                                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio1">Cookies</label>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset>
+                                                <div class="custom-control custom-radio d-block my-2">
+                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio2">Pancakes</label>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset disabled="disabled">
+                                                <div class="custom-control custom-radio d-block my-2">
+                                                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio3">Chocolate</label>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset disabled="disabled">
+                                                <div class="custom-control custom-radio d-block my-2">
+                                                    <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input" checked="checked">
+                                                    <label class="custom-control-label" for="customRadio4">Pancakes</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="custom-controls-example col-md-4 col-sm-4 col-xs-12 pl-4">
+                                            <h6 class="text-muted mb-1">Toggles</h6>
+                                            <fieldset>
+                                                <div class="custom-control custom-switch my-2">
+                                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                    <label class="custom-control-label" for="customSwitch1">Rockets</label>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset>
+                                                <div class="custom-control custom-toggle d-block my-2">
+                                                    <input type="checkbox" id="customToggle2" name="customToggle2" class="custom-control-input" checked="checked">
+                                                    <label class="custom-control-label" for="customToggle2">Lasers</label>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset disabled="disabled">
+                                                <div class="custom-control custom-toggle d-block my-2">
+                                                    <input type="checkbox" id="customToggle3" name="customToggle3" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customToggle3">HAL 9K</label>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset disabled="disabled">
+                                                <div class="custom-control custom-toggle d-block my-2">
+                                                    <input type="checkbox" id="customToggle4" name="customToggle4" class="custom-control-input" checked="checked">
+                                                    <label class="custom-control-label" for="customToggle4">Ultron</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 mx-0">
+                                        <div class="col-md-6 pl-0 custom-dropdown-example">
+                                            <h4 class="my-3">Custom Dropdown</h4>
+                                            <fieldset>
+                                                <select class="custom-select w-100" required="">
+                                                    <option value="">Select Favourite Number</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6 pl-0">
+                                            <h4 class="my-3">Custom File Input</h4>
+                                            <fieldset>
+                                                <div class="custom-file w-100">
+                                                    <input type="file" class="custom-file-input" id="customFile">
+                                                    <label class="custom-file-label" for="customFile">Choose file...</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/ End Custom Form -->
+                            <!-- Validation Form -->
+                            <div class="validation-form">
+                                <h3 class="my-4">Validation</h3>
+                                <form class="was-validated">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="form-2-first-name">First name</label>
+                                            <input type="text" class="form-control is-valid" id="form-2-first-name" placeholder="First name" value="Catalin" required="">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="form-2-last-name">Last name</label>
+                                            <input type="text" class="form-control is-valid" id="form-2-last-name" placeholder="Last name" value="Vasile" required="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="form-2-city">City</label>
+                                            <input type="text" class="form-control is-invalid" id="form-2-city" placeholder="City" required="">
+                                            <div class="invalid-feedback">Invalid city</div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="form-2-state">State</label>
+                                            <input type="text" class="form-control is-invalid" id="form-2-state" placeholder="State" required="">
+                                            <div class="invalid-feedback">Invalid state</div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="form-2-zip">Zip</label>
+                                            <input type="text" class="form-control is-invalid" id="form-2-zip" placeholder="Zip" required="">
+                                            <div class="invalid-feedback">Invalid ZIP code</div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="form-file-4">Photo ID Scan</label>
+                                            <div class="custom-file w-100">
+                                                <input type="file" class="custom-file-input" id="customFile2" required="">
+                                                <label class="custom-file-label" for="customFile2">Choose file...</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="d-block" for="form-3-select">Favourite Number</label>
+                                            <select class="custom-select w-100" id="form-3-select" required="">
+                                                <option value="">Invalid select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="custom-control custom-checkbox mb-3">
+                                                <input type="checkbox" class="custom-control-input" id="form-3-terms" required="">
+                                                <label class="custom-control-label" for="form-3-terms">Do you agree to our terms &amp; conditions?</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="custom-controls-stacked d-block">
+                                                <div class="custom-control custom-radio mb-1">
+                                                    <input type="radio" id="radioStacked1" name="radio-stacked" class="custom-control-input" required="">
+                                                    <label class="custom-control-label" for="radioStacked1">Subscribe me</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customRadio5" name="radio-stacked" class="custom-control-input" required="">
+                                                    <label class="custom-control-label" for="customRadio5">Don't subscribe me</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/ End Validation Form -->
+                            <!-- Slider -->
+                            <div class="slider-form">
+                                <h3 class="my-4">Slider</h3>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <label for="customRange1">Example range</label>
+                                        <input type="range" class="custom-range" id="customRange1">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Slider -->
+                            <!-- Date Pickers -->
+                            <div class="datepicker-form">
+                                <h3 class="my-4">Datepicker and Timepicker</h3>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="input-group input-group-seamless">
+                                            <input type="text" class="form-control" id="datepicker" placeholder="Date of Birth">
+                                            <span class="input-group-append">
+                                                                    <span class="input-group-text">
+                                                                        <i class="fa fa-calendar"></i>
+                                                                    </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="input-group input-group-seamless">
+                                            <input type="text" class="form-control" id="timepicker" placeholder="Time">
+                                            <span class="input-group-append">
+                                                                    <span class="input-group-text">
+                                                                        <i class="fa fa-clock"></i>
+                                                                    </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ End Slider -->
+                        </div>
+                    </div>
+                </section>
+                <!--/ End Form -->
+                <!-- Cards -->
+                <section class="section cards-section">
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <div class="section-title mb-5">
+                                <h2>Cards</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content row">
+                        <div class="col-10 mx-auto">
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <div class="card border-0 box-shadow">
+                                        <img src="https://images.unsplash.com/photo-1555471714-5f8237c25a6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h3>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="card border-0 box-shadow">
+                                        <img src="https://images.unsplash.com/photo-1565626929648-e45ee0840bb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h3>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="card border-0 box-shadow">
+                                        <img src="https://images.unsplash.com/photo-1556742205-e10c9486e506?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Card title</h3>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/ End Cards -->
+                <!-- Buttons -->
+                <section class="section buttons-section">
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <div class="section-title mb-5">
+                                <h2>Buttons</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content row">
+                        <!-- Default -->
+                        <div class="col-10 mx-auto mb-3">
+                            <h3>Default</h3>
+                        </div>
+                        <div class="col-10 mx-auto">
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-light">Light</button>
+                            <button type="button" class="btn btn-dark">Dark</button>
+                            <button type="button" class="btn btn-black">Black</button>
+                        </div>
+                        <!--/ End Default -->
+                        <!-- Size -->
+                        <div class="col-10 mx-auto mt-5 mb-3">
+                            <h3>Size</h3>
+                        </div>
+                        <div class="col-10 mx-auto">
+                            <button type="button" class="btn btn-lg btn-primary">Primary</button>
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-sm btn-primary">Primary</button>
+                        </div>
+                        <!--/ End Size -->
+                        <!-- Using Icon -->
+                        <div class="col-10 mx-auto mt-5 mb-3">
+                            <h3>Using Icon</h3>
+                        </div>
+                        <div class="col-10 mx-auto">
+                            <button type="button" class="btn btn-lg btn-pill btn-primary">
+                                <i class="fa fa-download mr-1"></i> Download
+                            </button>
+                            <button type="button" class="btn btn-pill btn-primary">
+                                <i class="fa fa-download mr-1"></i> Download
+                            </button>
+                            <button type="button" class="btn btn-sm btn-pill btn-primary">
+                                <i class="fa fa-download mr-1"></i> Download
+                            </button>
+                        </div>
+                        <!--/ End Using Icon -->
+                    </div>
+                </section>
+                <!--/ End Buttons -->
+                <!-- Progress Bar -->
+                <section class="section progress-bar-section">
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <div class="section-title mb-5">
+                                <h2>Progress Bar</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content row">
+                        <div class="col-10 mx-auto">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <h4 class="my-4">Sizes</h4>
+                                    <div class="progress mb-4" style="height: 5px">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <h4 class="my-4">Variations</h4>
+                                    <h5 class="text-muted my-3">Default</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h5 class="text-muted my-3">Multi bars</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h5 class="text-muted my-3">Striped</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h5 class="text-muted my-3">Animated</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/ End Progress Bar -->
+                <!-- Badges -->
+                <section class="section badge-section">
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <div class="section-title mb-5">
+                                <h2>Badges</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content row">
+                        <div class="col-10 mx-auto">
+                            <span class="badge mr-3 badge-primary">Primary</span> <span class="badge mr-3 badge-secondary">Secondary</span> <span class="badge mr-3 badge-pill badge-success">Success</span> <span class="badge mr-3 badge-pill badge-danger">Danger</span> <span class="badge mr-3 badge-squared badge-warning">Warning</span> <span class="badge mr-3 badge-squared badge-info">Info</span>
+                        </div>
+                    </div>
+                </section>
+                <!--/ End Badges -->
+                <!-- Tooltips -->
+                <section class="section tooltips-section">
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <div class="section-title mb-5">
+                                <h2>Tooltips & Popovers</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content row">
+                        <div class="col-10 mx-auto">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <h4 class="my-4">Tooltips</h4>
+                                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top
+                                    </button>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <h4 class="my-4">Popover</h4>
+                                    <button type="button" class="btn btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/ End Tooltips -->
+                <!-- Alerts -->
+                <section class="section alert-section">
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <div class="section-title mb-5">
+                                <h2>Alerts</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content row">
+                        <div class="col-10 mx-auto">
+                            <!-- Info Dismissible Alert -->
+                            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <i class="fa fa-info"></i> <strong>Hey!</strong> I think you should know this.</div>
+                            <!-- Success Dismissible Alert -->
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <i class="fa fa-check"></i> <strong>Yay!</strong> Everything is fine!</div>
+                            <!-- Warning Dismissible Alert -->
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <i class="fa fa-warning"></i> <strong>Oops!</strong> Something might be wrong</div>
+                            <!-- Danger Dismissible Alert -->
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <i class="fa fa-exclamation-circle"></i> <strong>On no!</strong> Something really bad happened!</div>
+                        </div>
+                    </div>
+                </section>
+                <!--/ End Tooltips -->
+            </div>
+        </div>
     </div>
     <!-- jQuery Script -->
-    <script src="./assets/vendors/jquery/jquery.min.js"></script>
+    <script src="./assets/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- jQuery UI Script -->
+    <script src="./assets/vendors/jquery/dist/datepicker.js"></script>
+    <script src="./assets/vendors/jquery/dist/jquery.timepicker.js"></script>
     <!-- jQuery Easing Script -->
-    <script src="./assets/vendors/jquery/jquery.easing.min.js"></script>
+    <script src="./assets/vendors/jquery/dist/jquery.easing.min.js"></script>
     <!-- Popper Script -->
     <script src="./assets/vendors/bootstrap/dist/js/popper.min.js"></script>
+    <!-- Bootstrap Custom File Input Script -->
+    <script src="./assets/vendors/bootstrap/dist/js/bs-custom-file-input.min.js"></script>
+    <script>bsCustomFileInput.init();</script>
     <!-- Bootstrap Script -->
     <script src="./assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- SVG4Everybody Script -->
     <script src="./assets/vendors/svg4everybody/dist/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
+    <!-- Theme Extension Script -->
+    <script src="./assets/js/theme-ext.js"></script>
     <!-- Main Script -->
     <script src="./assets/js/main.min.js"></script>
+    <style>
+        .section {
+            padding: 50px 0;
+        }
+        .box-shadow {
+            box-shadow: -2px -1px 9px rgba(89, 131, 208, 0.19);
+        }
+        /* Color */
+        .color-wrapper .color {
+            border: 0;
+            padding: 45px 25px;
+            margin-bottom: 30px;
+        }
+        .color-wrapper .swatch {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 26px;
+        }
+        /* Typography */
+        .typography-section table td {
+            padding: 30px 20px;
+            vertical-align: middle;
+        }
+    </style>
 </body>
 </html>
