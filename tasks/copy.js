@@ -1,6 +1,7 @@
 module.exports = function () {
     'use strict';
-    // Copy third party libraries from /node_modules into /vendors.
+    // Copy third party libraries from /node_modules into /build/vendors
+    // And copy project static files from /src into /build
     this.config('copy', {
         fontawesome: {
             files: [{
@@ -103,7 +104,18 @@ module.exports = function () {
                 dest: '<%= path.build.vendors %>/svg4everybody/dist'
             }]
         },
-        build_html: {
+        build_static: {
+            files: [{
+                expand: true,
+                cwd: '<%= path.src.root %>',
+                src: [
+                    '**/*.{png,jpg,gif,js,css}',
+                    'fonts/**/*'
+                ],
+                dest: '<%= path.build.assets %>'
+            }]
+        },
+        build_static_html: {
             files: [{
                 expand: true,
                 cwd: '<%= path.src.root %>',
@@ -113,32 +125,12 @@ module.exports = function () {
                 dest: '<%= path.build.root %>'
             }]
         },
-        build_image: {
-            files: [{
-                expand: true,
-                cwd: '<%= path.src.root %>',
-                src: [
-                    '**/*.{png,jpg,gif}'
-                ],
-                dest: '<%= path.build.assets %>'
-            }]
-        },
         build_scss: {
             files: [{
                 expand: true,
                 cwd: '<%= path.src.root %>',
                 src: [
                     '**/*.scss'
-                ],
-                dest: '<%= path.build.assets %>'
-            }]
-        },
-        build_js: {
-            files: [{
-                expand: true,
-                cwd: '<%= path.src.root %>',
-                src: [
-                    '**/*.js'
                 ],
                 dest: '<%= path.build.assets %>'
             }]
