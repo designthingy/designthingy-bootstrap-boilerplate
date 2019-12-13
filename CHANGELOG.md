@@ -1,6 +1,10 @@
+### 1.3.0 (December 12, 2019)
+
+* Improve: Move from load-grunt-configs to load-grunt-config
+
 ### 1.2.0 (October 01, 2019)
 
-* UPDATE: Dependencies
+* Update: Dependencies
 * Improve: Copy task for static files
 
 ### 1.1.0 (August 18, 2019)

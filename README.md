@@ -29,6 +29,7 @@ A painless front-end bootstrap boilerplate by DesignThingy for building fast, ro
 - **Linting**: Built-in support for eslint and stylelint for testing
 - **SVG**: Support SVG4Everybody that adds [SVG External Content](http://css-tricks.com/svg-sprites-use-better-icon-fonts/##Browser+Support) support to all browsers
 - **Bootstrap Theming**: Support Bootstrap theming
+- **Fontawesome**: Build-in fontawesome support
 - **SCSS module pattern support**
 
 ## Author
@@ -83,18 +84,18 @@ npm start
 
 | Tasks     | Description                                                                         |
 |-----------|-------------------------------------------------------------------------------------|
-| Default   | `grunt` or `npm start`     Build and run the local server (development ready)       |
+| Default   | `grunt dev` or `npm start` Build and run the local server (development ready)       |
 | Build     | `grunt build`              Build the project (production ready)                     |
 | Preview   | `grunt prev`               Preview the project on local server                      |
 | Test      | `grunt test` or `npm test` Run tests on JS and SCSS files                           |
 
 ### Live development
 
-You can live test your changes using `npm start` or `grunt` (install [node](https://nodejs.org/en/) if you haven't) on a local server.
+You can live test your changes using `npm start` or `grunt dev` (install [node](https://nodejs.org/en/) if you haven't) on a local server.
 
 ## Usage
 
-Add all your JS, SCSS (style.scss and bootstrap-override.scss required), SVG and HTML files in the `src` folder and you will get the output in `build` folder.
+Add all your JS, IMAGES, SCSS (style.scss and bootstrap-override.scss required), SVG and HTML files in the `src` folder and you will get the output in `build` folder.
 
 ### SVG sprite
 
