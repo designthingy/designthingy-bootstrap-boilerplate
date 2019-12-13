@@ -1,6 +1,6 @@
 # Support
 
-For personal support requests with DesignThingy HTML5 Boilerplate please mail us at connect@designthingy.co.
+For personal support requests with DesignThingy Bootstrap Boilerplate please mail us at connect@designthingy.co.
 
 Please check the respective repository/website for support regarding the code in
   [`jQuery`](https://github.com/jquery/jquery/),

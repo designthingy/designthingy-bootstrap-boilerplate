@@ -1,4 +1,4 @@
-# Contributing to DesignThingy HTML5 Boilerplate
+# Contributing to DesignThingy Bootstrap Boilerplate
 
 Please take a moment to review this document in order to make the contribution
 process easy and effective for everyone involved.
@@ -136,4 +136,4 @@ included in the project:
     with a clear title and description.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project
-owners to license your work under the terms of the [GPL 3.0 License](https://github.com/designthingy/designthingy-bootstrap-boilerplate/blob/master/LICENSE).
+owners to license your work under the terms of the [MIT License](https://github.com/designthingy/designthingy-bootstrap-boilerplate/blob/master/LICENSE).

@@ -17,7 +17,9 @@ A painless front-end bootstrap boilerplate by DesignThingy for building fast, ro
     - [Tasks](#tasks)
     - [Live development](#live-development)
 6. [Usage](#usage)
-7. [Copyright](#copyright)
+7. [Docs](https://github.com/designthingy/designthingy-bootstrap-boilerplate/wiki/About-Project)
+8. [FAQ](#faq)
+9. [Copyright](#copyright)
 
 ## Features
 
@@ -82,12 +84,12 @@ npm start
 
 ### Tasks
 
-| Tasks     | Description                                                                         |
-|-----------|-------------------------------------------------------------------------------------|
-| Default   | `grunt dev` or `npm start` Build and run the local server (development ready)       |
-| Build     | `grunt build`              Build the project (production ready)                     |
-| Preview   | `grunt prev`               Preview the project on local server                      |
-| Test      | `grunt test` or `npm test` Run tests on JS and SCSS files                           |
+| Tasks        | Description                                                                         |
+|--------------|-------------------------------------------------------------------------------------|
+| Development  | `grunt dev` or `npm start` Build and run the local server (development ready)       |
+| Build        | `grunt build`              Build the project (production ready)                     |
+| Preview      | `grunt prev`               Preview the project on local server                      |
+| Test         | `grunt test` or `npm test` Run tests on JS and SCSS files                           |
 
 ### Live development
 
@@ -95,11 +97,16 @@ You can live test your changes using `npm start` or `grunt dev` (install [node](
 
 ## Usage
 
-Add all your JS, IMAGES, SCSS (style.scss and bootstrap-override.scss required), SVG and HTML files in the `src` folder and you will get the output in `build` folder.
+Add all your JS, IMAGES, SCSS (style.scss and bootstrap-override.scss are required), SVG and HTML files in the `src` folder and you will get the output in `build` folder.
 
 ### SVG sprite
 
 To generate SVG sprite, add all your svg icons in a `src\svg` folder. You will see a `svg-sprite.svg` in `build\assets\svg` folder.
+
+## FAQ
+
+### How it's different from other boilerplates?
+As being a conversion service ourselves, we exactly know what the parameters that a developer need's to take care during coding a static website from design are. It requires a clean, robust and fast development environment. Through our experience in the field, we have created this boilerplate to overcome issues and streamline the development process. We have designed Designthingy Bootstrap Boilerplate by keeping design to live website conversion purpose in mind.
 
 ## Copyright
 
