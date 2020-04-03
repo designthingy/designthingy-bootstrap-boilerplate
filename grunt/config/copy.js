@@ -120,7 +120,7 @@ module.exports = {
             src: [
                 '**/*.js'
             ],
-            dest: 'build'
+            dest: 'build/assets'
         }]
     },
     build_html: {
