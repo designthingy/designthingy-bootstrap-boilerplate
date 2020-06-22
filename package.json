@@ -17,9 +17,7 @@
         "email": "connect@designthingy.co"
     },
     "license": "MIT",
-    "author": [
-        "DesignThingy <connect@designthingy.co> (https://designthingy.co)"
-    ],
+    "author": "DesignThingy <connect@designthingy.co> (https://designthingy.co)",
     "contributors": [
         "Shashikant Yadav (https://twitter.com/kantbtrue)",
         "Saurabh Yadav (https://twitter.com/savydv)"
@@ -41,10 +39,10 @@
         "last 4 versions"
     ],
     "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.13.0",
-        "bootstrap": "^4.4.1",
+        "@fortawesome/fontawesome-free": "^5.13.1",
+        "bootstrap": "^4.5.0",
         "bs-custom-file-input": "^1.3.4",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.1",
         "jquery-timepicker": "^1.3.3",
         "jquery-ui": "^1.12.1",
         "jquery.easing": "^1.4.1",
@@ -53,8 +51,8 @@
         "svg4everybody": "^2.1.9"
     },
     "devDependencies": {
-        "@babel/preset-env": "^7.9.0",
-        "autoprefixer": "^9.7.5",
+        "@babel/preset-env": "^7.10.3",
+        "autoprefixer": "^9.8.2",
         "cssnano": "^4.1.10",
         "grunt": "^1.1.0",
         "grunt-babel": "^8.0.0",
@@ -64,21 +62,21 @@
         "grunt-contrib-imagemin": "^4.0.0",
         "grunt-contrib-uglify": "^4.0.1",
         "grunt-contrib-watch": "^1.1.0",
-        "grunt-eslint": "^22.0.0",
+        "grunt-eslint": "^23.0.0",
         "grunt-postcss": "^0.9.0",
         "grunt-sass": "^3.1.0",
-        "grunt-stylelint": "^0.14.0",
+        "grunt-stylelint": "^0.15.0",
         "grunt-svgmin": "^6.0.0",
         "grunt-svgstore": "^2.0.0",
         "imagemin": "^7.0.1",
         "imagemin-gifsicle": "^7.0.0",
-        "imagemin-jpegtran": "^6.0.0",
-        "imagemin-optipng": "^7.1.0",
+        "imagemin-jpegtran": "^7.0.0",
+        "imagemin-optipng": "^8.0.0",
         "load-grunt-config": "^3.0.1",
-        "node-sass": "^4.13.1",
+        "node-sass": "^4.14.1",
         "path": "^0.12.7",
-        "stylelint": "^13.2.1",
-        "stylelint-order": "^4.0.0",
+        "stylelint": "^13.6.1",
+        "stylelint-order": "^4.1.0",
         "time-grunt": "^2.0.0"
     }
 }
