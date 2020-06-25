@@ -117,9 +117,7 @@ module.exports = {
         files: [{
             expand: true,
             cwd: 'src',
-            src: [
-                '**/*.js'
-            ],
+            src: '**/*.js',
             dest: 'build/assets'
         }]
     },
@@ -127,9 +125,7 @@ module.exports = {
         files: [{
             expand: true,
             cwd: 'src',
-            src: [
-                '**/*.html'
-            ],
+            src: '**/*.html',
             dest: 'build'
         }]
     },
@@ -137,9 +133,7 @@ module.exports = {
         files: [{
             expand: true,
             cwd: 'src',
-            src: [
-                '**/*.scss'
-            ],
+            src: '**/*.scss',
             dest: 'build/assets'
         }]
     }

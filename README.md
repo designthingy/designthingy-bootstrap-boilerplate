@@ -5,7 +5,7 @@
 [![Dependency Status](https://david-dm.org/designthingy/designthingy-bootstrap-boilerplate.svg)](https://david-dm.org/designthingy/designthingy-bootstrap-boilerplate)
 [![License: MIT](https://img.shields.io/github/license/designthingy/designthingy-bootstrap-boilerplate?color=blue)](https://github.com/designthingy/designthingy-bootstrap-boilerplate/blob/master/LICENSE)
 
-A painless front-end bootstrap boilerplate by DesignThingy for building fast, robust, and adaptable static websites.
+A painless front-end bootstrap boilerplate by DesignThingy for building fast, robust, and adaptable static websites from PSD, sketch files.
 
 ## Table of Contents
 
@@ -99,9 +99,17 @@ You can live test your changes using `npm start` or `grunt dev` (install [node](
 
 Add all your JS, IMAGES, SCSS (style.scss and bootstrap-override.scss are required), SVG and HTML files in the `src` folder and you will get the output in `build` folder.
 
+### Customize Bootstrap
+
+To customize bootstrap you need to add all your custom `scss` code in `src/scss/_custom.scss`.
+
 ### SVG sprite
 
 To generate SVG sprite, add all your svg icons in a `src\svg` folder. You will see a `svg-sprite.svg` in `build\assets\svg` folder.
+
+### Customize Grunt config or tasks
+
+To customize grunt configuration or tasks, go to `grunt/config` or `grunt/tasks`. 
 
 ## FAQ
 

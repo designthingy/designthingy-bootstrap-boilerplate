@@ -1,6 +1,6 @@
 module.exports = { // Babel - transpiler for js.
     options: {
-        sourceMap: false
+        sourceMap: true
     },
     dist: {
         files: [{

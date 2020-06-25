@@ -1,3 +1,7 @@
+### 1.4.0 (June 6, 2020)
+
+* Update: Dependencies
+
 ### 1.3.0 (December 12, 2019)
 
 * Improve: Move from load-grunt-configs to load-grunt-config
