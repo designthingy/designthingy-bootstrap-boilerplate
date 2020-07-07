@@ -1,6 +1,6 @@
 module.exports = { // Watch for file changes and runs specific tasks.
     theming: {
-        files: ['src/scss/bootstrap-override.scss', 'src/scss/_variables.scss'],
+        files: ['src/scss/bootstrap-override.scss', 'src/scss/_custom.scss'],
         tasks: ['copy:build_scss', 'sass:theming', 'postcss:theming', 'postcss:theming_nano']
     },
     main: {
